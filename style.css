@@ -1,0 +1,148 @@
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-MBG: hsl(217, 54%, 11%);
+  --Very-dark-blue-CBG: hsl(216, 50%, 16%);
+  --Very-dark-blue-Line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "rubik", sans-serif;
+  background-color: var(--Very-dark-blue-MBG);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 18px;
+  margin: 2.75rem;
+}
+
+.container {
+  background-color: var(--Very-dark-blue-CBG);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.ETH-logo {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.equilibrium {
+  color: var(--White);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.Equi-description {
+  color: var(--soft-blue);
+  line-height: 1.5;
+  margin-bottom: 1.8rem;
+}
+
+.ETH-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+
+.ETH-amount {
+  display: flex;
+  gap: 0.5rem;
+}
+.amount {
+  color: #00fff8;
+}
+
+.duration {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.days {
+  color: var(--soft-blue);
+}
+
+.avatar-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  /* margin-top: 3rem; */
+  border-top: 1px solid var(--soft-blue);
+  padding-top: 1rem;
+}
+
+.img-avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 2px solid var(--White);
+}
+
+.avatar-text {
+  color: var(--soft-blue);
+  letter-spacing: 1.2px;
+}
+
+.link:link,
+.link:visited {
+  color: var(--White);
+  text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+  color: var(--Cyan);
+  text-decoration: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media (max-width: 23em) {
+  .container {
+    max-width: 90em;
+    padding: 1.3rem;
+  }
+
+  .equilibrium {
+    font-size: 1rem;
+  }
+
+  .avatar-info {
+    font-size: 0.8rem;
+  }
+
+  .Equi-description {
+    font-size: 0.8rem;
+  }
+
+  .ETH-info {
+    font-size: 0.8rem;
+  }
+}
